@@ -114,7 +114,7 @@ export default function Header() {
         <header className={`${Styles.Header} ${scrollY > 0 ? Styles.stick : null}`}>
             <section>
                 <Link href="/">
-                    <a>CWSTARK</a>
+                    <a style={{color: router.pathname === '/politicas' ? 'var(--color-3)' : null }}>CWSTARK</a>
                 </Link> 
                 
                 <nav style={{ display: router.pathname === '/' ? 'flex' : 'none' }}>
