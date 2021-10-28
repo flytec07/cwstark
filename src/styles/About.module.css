@@ -1,0 +1,46 @@
+.aboutImg, .aboutText, .aboutQualities {
+    max-width: var(--contentWidth);
+    margin: auto;
+}
+
+.aboutImg {
+    display: block;
+    margin-bottom: var(--spacing-1);
+    box-shadow: var(--shadow-medium);
+}
+
+.aboutQualities {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+    padding-top: var(--spacing-1);
+    padding-bottom: var(--spacing-0);
+}
+
+.aboutQualities li, .aboutQualities img, .aboutQualities h3 {
+    margin: 0;
+}
+
+.aboutQualities li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    align-items: center;
+    text-align: center;
+}
+
+.aboutQualities h3 {
+    font-weight: lighter;
+}
+
+.aboutQualities img {
+    width: 75px;
+}
+
+@media (max-width: 600px) { 
+    .aboutQualities li {
+        align-items: flex-start;
+        text-align: left;
+    }
+}

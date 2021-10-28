@@ -1,0 +1,38 @@
+.img {
+  z-index: 0;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-1);
+  background-image: linear-gradient( rgba(0, 0, 0, .8),rgba(0, 0, 0, .3) );
+  background-size: cover;
+  background-position: center;
+}
+
+.home h1, .home p {
+  color: var(--color-1);
+  margin: 0;
+  z-index: 999;
+}
+
+.home h1 {
+  font-size: var(--fontSize-0);
+  line-height: var(--fontSize-0);
+}
+
+.home p {
+  max-width: var(--contentWidth);
+}
+
+@media (max-width: 800px) { 
+  .home h1 {
+      font-size: var(--fontSize-1);
+      line-height: var(--fontSize-1);
+  }
+}
